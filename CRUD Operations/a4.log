@@ -1,0 +1,86 @@
+mysql> ALTER TABLE SALES ADD COLUMN Num_Items_sold int NOT NULL;
+Query OK, 0 rows affected (0.22 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE SALES ADD COLUMN status char(9) NOT NULL;
+Query OK, 0 rows affected (0.17 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1001;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1002;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1003;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1004;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1005;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1006;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1007;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1008;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1009;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1010;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1011;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1012;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1013;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE SALES SET Num_Items_sold = 1 where TRANS_ID = 1014;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM SALES;
++----------+---------+----------+---------------+-------------+----------------+--------+
+| TRANS_ID | ITEM_ID | DISCOUNT | PURCHASE_DATE | EMPLOYEE_ID | Num_Items_sold | status |
++----------+---------+----------+---------------+-------------+----------------+--------+
+|     1001 |       2 |        0 | 2021-02-01    |          10 |              1 |        |
+|     1002 |       3 |       10 | 2021-02-05    |           4 |              1 |        |
+|     1003 |       6 |       15 | 2021-02-07    |           4 |              1 |        |
+|     1004 |       7 |        0 | 2021-02-12    |          10 |              1 |        |
+|     1005 |       2 |        0 | 2021-02-12    |          10 |              1 |        |
+|     1006 |       1 |       10 | 2021-02-12    |          10 |              1 |        |
+|     1007 |       4 |       10 | 2021-02-18    |           4 |              1 |        |
+|     1008 |       8 |       20 | 2021-02-20    |           4 |              1 |        |
+|     1009 |       5 |       10 | 2021-02-22    |           4 |              1 |        |
+|     1010 |       9 |       20 | 2021-02-25    |          10 |              1 |        |
+|     1011 |      10 |       10 | 2021-02-28    |           4 |              1 |        |
+|     1012 |       1 |       10 | 2021-02-28    |          10 |              1 |        |
+|     1013 |       1 |       10 | 2021-02-28    |          10 |              1 |        |
+|     1014 |       1 |       10 | 2021-02-28    |           4 |              1 |        |
++----------+---------+----------+---------------+-------------+----------------+--------+
+14 rows in set (0.00 sec)
+
+mysql> notee

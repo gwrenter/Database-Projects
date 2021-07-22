@@ -1,0 +1,174 @@
+Script started on 2021-03-29 15:39:38-0500
+]0;gwrenter@turing: ~gwrenter@turing:~$ exitclearmysqlclearpython3 hw4.py[9Pclearpython3 hw4.py
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 1
+Please enter the name of a country (ALL CAPS): YEMEN
+
+Query Result:
+
+  SUPPLIER_ID  SUPPLIER_NAME      PHONE_NUMBER  COFFEE_NAME    ROASTING
+-------------  ---------------  --------------  -------------  ----------
+            3  PORT OF MOKHA       +9671234567  ALWADI         L
+            3  PORT OF MOKHA       +9671234567  ALDURRAR       M
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 1
+Please enter the name of a country (ALL CAPS): GERMANY
+
+Query Result:
+
+SUPPLIER_ID    SUPPLIER_NAME    PHONE_NUMBER    COFFEE_NAME    ROASTING
+-------------  ---------------  --------------  -------------  ----------
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 2
+Please enter a supplier name (ALL CAPS): MERCON
+Please enter a phone number: +5020001111 
+Please enter the name of a country (ALL CAPS): GUATEMALA
+Please enter a coffee item name the supplier provides: PNG
+
+Query Result:
+
+  ID  NAME      PHONE_NUMBER  ADDRESS
+----  ------  --------------  ---------
+  11  MERCON      +502000111  GUATEMALA
+
+Query Result:
+
+COFFEE_SUPPLIERS
+------------------
+RELIANCE LTD
+MERCON
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 3
+Please enter an employee name (ALL CAPS): JAMAL
+
+Query Result:
+
+ITEM_SOLD       ROASTING      TOTAL_SALES
+--------------  ----------  -------------
+ANTIGUA         M                       3
+ARABICA         D                       1
+HAMBELA KIRITE  M                       2
+PNG             M                       1
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 3
+Please enter an employee name (ALL CAPS): ISAIAH
+
+No items sold by this employee
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 4
+Please enter an item name (ALL CAPS): ANTIGUA
+Do you want to do?:
+        1. Get a new shipment
+        2. Make a sale
+Please select an option: 1
+Please enter the number of items shipped: 30
+
+Query Result:
+
+ITEM_NAME      TOTAL_AVAILABLE_BEFORE    TOTAL_AVAILABLE_AFTER
+-----------  ------------------------  -----------------------
+ANTIGUA                            10                       40
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 4
+Please enter an item name (ALL CAPS): ROBUSTA
+Do you want to do?:
+        1. Get a new shipment
+        2. Make a sale
+Please select an option: 1
+Please enter the number of items shipped: 30
+
+This item does not exist in the inventory
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 5
+Please enter a transaction ID to cancel sales: 1006
+
+Query Result:
+
+  ITEM_ID    SUPPLIER_ID    TOTAL_ITEM_SALES_3_MONTHS    TOTAL_AVAILABLE
+---------  -------------  ---------------------------  -----------------
+        1              1                           20                 41
+
+Query Result:
+
+  TRANS_ID    ITEM_ID    DISCOUNT  PURCHASE_DATE      EMPLOYEE_ID  status
+----------  ---------  ----------  ---------------  -------------  ---------
+      1006          1          10  2021-02-12                  10  CANCELLED
+
+Menu of Operations:
+    1. Supplier by Country
+    2. Add Supplier
+    3. Employee Performance
+    4. Update Item
+    5. Cancel Sales
+    6. Quit
+
+Please enter your choice: 6
+Goodbye!
+]0;gwrenter@turing: ~gwrenter@turing:~$ EXIT[K[K[K[Kexit
+exit
+
+Script done on 2021-03-29 15:43:08-0500
